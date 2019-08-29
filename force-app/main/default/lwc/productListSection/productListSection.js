@@ -17,6 +17,8 @@ export default class ProductListSection extends LightningElement {
     @track configsToShow = [];
     @track selectedProducts = [];
 
+    @track value = "Red";
+
 
     @wire (getListUi, {objectApiName: CATEGORY_OBJECT, listViewApiName: "Top_Level"})
     retrievedTopCategories ({data, error}) {
@@ -218,7 +220,7 @@ export default class ProductListSection extends LightningElement {
             case "Drop Down":
                 inputType = "select"
                 isSelect = true;
-                options = configs.Picklist_Values__c.value.split(',');
+                options = this.parsePicklistValues(configs.Picklist_Values__c.value);
                 console.log(options);
                 break;
             default:
@@ -238,6 +240,17 @@ export default class ProductListSection extends LightningElement {
             isText: isText,
             options: options
         };
+    }
+
+    parsePicklistValues (values) {
+        let valuesArr = values.split(',');
+        let options = [];
+
+        valuesArr.forEach((currentValue, i, arr) => {
+            options.push({ label: currentValue, value: currentValue });
+        });
+
+        return options;
     }
 
     showSpinner () {
