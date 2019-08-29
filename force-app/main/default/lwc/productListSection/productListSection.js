@@ -247,10 +247,10 @@ export default class ProductListSection extends LightningElement {
         let options = [];
 
         valuesArr.forEach((currentValue, i, arr) => {
-            options.push({{ label: currentValue, value: currentValue }});
+            options.push({ label: currentValue, value: currentValue });
         });
 
-        return valuesArr;
+        return options;
     }
 
     showSpinner () {
