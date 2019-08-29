@@ -68,9 +68,7 @@ global with sharing class ProductService
             {
                 System.debug(parentLevel);
 
-
                 parent = (Category__c)parent.getSObject(parentFieldName);
-
 
                 System.debug(parent);
 

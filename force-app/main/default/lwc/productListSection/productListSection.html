@@ -1,4 +1,21 @@
 <template>
+    <style>
+        /*.redColor {
+            background-color: red!important;
+        }
+
+        .test {
+            width: 2rem;
+            height: 2rem;
+            position: relative;
+            display: inline-block;
+            border: 1px solid rgb(217, 219, 221);
+            border-radius: .25rem;
+            background-color: red !important;
+            cursor: pointer;
+        }*/
+    </style>
+
     <lightning-card title="All Products" icon-name="utility:opened_folder">
         <div slot="actions">
             <lightning-button  slot="actions"  label="New Product"></lightning-button>
@@ -32,13 +49,18 @@
                                         </lightning-button-icon>
                                     </lightning-layout-item>
                                     <lightning-layout-item size="2" class="slds-p-horizontal_xx-small">
-                                        <lightning-input id={category.id}
-                                                         type="checkbox-button"
-                                                         label=""
-                                                         name={category.level}
-                                                         checked={category.value}
-                                                         onchange={handleCategoryClick}>
-                                        </lightning-input>
+                                        <div class="redColor test">
+                                            <lightning-input id={category.id}
+                                                             type="checkbox-button"
+                                                             label=""
+                                                             name={category.level}
+                                                             checked={category.value}
+                                                             onchange={handleCategoryClick}
+                                                             class="redColor test"
+                                            >
+                                            </lightning-input>
+                                        </div>
+
                                     </lightning-layout-item>
                                 </lightning-layout>
                             </div>
@@ -72,7 +94,12 @@
                                                     </lightning-layout-item>
                                                 </lightning-layout>
                                             </template>
-                                            <template if:false={config.isNumber}>
+                                            <template if:true={config.isSelect}>
+                                                <lightning-combobox name={config.name} label={config.name} options={config.options}>
+
+                                                </lightning-combobox>
+                                            </template>
+                                            <template if:true={config.isText}>
                                                 <lightning-input name={config.name} label={config.name} isnumber={config.isNumber} type={config.type} onchange={handleFilterChange}></lightning-input>
                                             </template>
                                         </li>

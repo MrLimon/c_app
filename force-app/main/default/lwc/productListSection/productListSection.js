@@ -45,8 +45,7 @@ export default class ProductListSection extends LightningElement {
             data.records.records.forEach((currentConfig, index)=>{
                 console.log(currentConfig.fields);
 
-                this.configsToShow.push(this.configurateConfigWrapper(index, currentConfig.fields.Api_Name__c.value,
-                currentConfig.fields.Type__c.value));
+                this.configsToShow.push(this.configurateConfigWrapper(index, currentConfig.fields));
             });
         } else {
             //handle error
@@ -200,33 +199,45 @@ export default class ProductListSection extends LightningElement {
         return {level: level, name: categoryName, id: categoryId, value: value, iconName: "utility:down"};
     }
 
-    configurateConfigWrapper(index, configName, configType, defaultValue) {
+    configurateConfigWrapper(index, configs) {
         let inputType;
         let isSelect;
-        let isNumber;
+        let isNumber = false;
+        let isText = false;
+        let options = false;
 
-        switch(configType) {
+        switch(configs.Type__c.value) {
             case "Number":
                 inputType = "number";
-                isSelect = false;
                 isNumber = true;
                 break;
             case "Text":
                 inputType = "text";
-                isSelect = false;
+                isText = true;
                 break;
-            case "Drop sown":
+            case "Drop Down":
                 inputType = "select"
                 isSelect = true;
+                options = configs.Picklist_Values__c.value.split(',');
+                console.log(options);
                 break;
             default:
                 inputType = "text";
+                isText = true;
         }
 
         console.log(inputType);
         console.log(isSelect);
 
-        return {index: index, name: configName, type: configType, isSelect: isSelect, isNumber: isNumber};
+        return {
+            index: index,
+            name: configs.Api_Name__c.value,
+            type: configs.Type__c.value,
+            isSelect: isSelect,
+            isNumber: isNumber,
+            isText: isText,
+            options: options
+        };
     }
 
     showSpinner () {
