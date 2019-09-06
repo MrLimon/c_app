@@ -350,7 +350,7 @@
             "sourcePath": "D:\\projects-personal\\cc_app\\force-app\\main\\default\\classes",
             "isDirectory": true,
             "size": 0,
-            "modifiedTime": 1567782745723,
+            "modifiedTime": 1567782969248,
             "changeTime": 1567094051434,
             "contentHash": "3b27fef44065c65958b08013ca085385be86d8c7",
             "isMetadataFile": false,
@@ -601,15 +601,15 @@
     [
         "D:\\projects-personal\\cc_app\\force-app\\main\\default\\classes\\ProductsSearchService.cls",
         {
-            "state": "u",
             "sourcePath": "D:\\projects-personal\\cc_app\\force-app\\main\\default\\classes\\ProductsSearchService.cls",
             "isDirectory": false,
+            "size": 6073,
+            "modifiedTime": 1567782969243,
+            "changeTime": 1567782969248,
+            "contentHash": "840504d0beaff4152434fdb293bc0be8fae3d3fb",
             "isMetadataFile": false,
-            "size": 6052,
-            "modifiedTime": 1567782745718,
-            "changeTime": 1567782745723,
-            "isWorkspace": false,
-            "contentHash": "747097e8d1abddb3003386f4a8f3800380a75a69"
+            "state": "u",
+            "isWorkspace": false
         }
     ],
     [
@@ -1201,7 +1201,7 @@
             "sourcePath": "D:\\projects-personal\\cc_app\\force-app\\main\\default\\lwc\\productListSection",
             "isDirectory": true,
             "size": 0,
-            "modifiedTime": 1567094051430,
+            "modifiedTime": 1567785943236,
             "changeTime": 1567094051430,
             "contentHash": "75372d86dbe33684a9ef8c04d1037b2e1b5f744d",
             "isMetadataFile": false,
@@ -1213,16 +1213,15 @@
     [
         "D:\\projects-personal\\cc_app\\force-app\\main\\default\\lwc\\productListSection\\productListSection.html",
         {
+            "state": "u",
             "sourcePath": "D:\\projects-personal\\cc_app\\force-app\\main\\default\\lwc\\productListSection\\productListSection.html",
             "isDirectory": false,
-            "size": 9732,
-            "modifiedTime": 1567093641376,
-            "changeTime": 1567093641379,
-            "contentHash": "1e9a0d7ffca9c4ffd90623697466ab7f5a42abd3",
             "isMetadataFile": false,
-            "state": "u",
+            "size": 10237,
+            "modifiedTime": 1567785943234,
+            "changeTime": 1567785943236,
             "isWorkspace": false,
-            "isArtifactRoot": false
+            "contentHash": "a6cdd08dcefa1b31ee5db2ade523666cb8244200"
         }
     ],
     [
