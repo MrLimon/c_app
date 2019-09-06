@@ -214,7 +214,7 @@ export default class ProductListSection extends LightningElement {
     }
 
     deleteProduct(event) {
-
+        console.log(event.target.id);
     }
 
     createProduct(event) {

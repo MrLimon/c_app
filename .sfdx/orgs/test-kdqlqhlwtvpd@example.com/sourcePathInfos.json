@@ -1201,7 +1201,7 @@
             "sourcePath": "D:\\projects-personal\\cc_app\\force-app\\main\\default\\lwc\\productListSection",
             "isDirectory": true,
             "size": 0,
-            "modifiedTime": 1567789706214,
+            "modifiedTime": 1567790840463,
             "changeTime": 1567094051430,
             "contentHash": "75372d86dbe33684a9ef8c04d1037b2e1b5f744d",
             "isMetadataFile": false,
@@ -1213,15 +1213,15 @@
     [
         "D:\\projects-personal\\cc_app\\force-app\\main\\default\\lwc\\productListSection\\productListSection.html",
         {
-            "state": "u",
             "sourcePath": "D:\\projects-personal\\cc_app\\force-app\\main\\default\\lwc\\productListSection\\productListSection.html",
             "isDirectory": false,
+            "size": 13982,
+            "modifiedTime": 1567790775793,
+            "changeTime": 1567790775798,
+            "contentHash": "9c4f6ce6aa97d584fbb49166c94d8256d6db7769",
             "isMetadataFile": false,
-            "size": 13908,
-            "modifiedTime": 1567789607944,
-            "changeTime": 1567789607948,
-            "isWorkspace": false,
-            "contentHash": "1844c5a455ed128ddabb6166008bb7671cd08650"
+            "state": "u",
+            "isWorkspace": false
         }
     ],
     [
@@ -1231,11 +1231,11 @@
             "sourcePath": "D:\\projects-personal\\cc_app\\force-app\\main\\default\\lwc\\productListSection\\productListSection.js",
             "isDirectory": false,
             "isMetadataFile": false,
-            "size": 9492,
-            "modifiedTime": 1567789706209,
-            "changeTime": 1567789706214,
+            "size": 9529,
+            "modifiedTime": 1567790840458,
+            "changeTime": 1567790840463,
             "isWorkspace": false,
-            "contentHash": "af5c66756b8482e4d8749a30885ae6d94c6e34df"
+            "contentHash": "7c8ae52a493d4b1131613a4b3ae61e8811ec99cf"
         }
     ],
     [
