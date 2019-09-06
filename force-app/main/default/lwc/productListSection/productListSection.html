@@ -156,8 +156,8 @@
                             </template>
                             <td>
                                 <div class="slds-truncate">
-                                    <a   class="slds-p-right_small">Remove</a>
-                                    <a   class="slds-p-right_small">Edit</a>
+                                    <a id={product.Id} onclick={deleteProduct} class="slds-p-right_small">Remove</a>
+                                    <a id={product.Id} onclick={editProduct} class="slds-p-right_small">Edit</a>
                                 </div>
                             </td>
                         </tr>
