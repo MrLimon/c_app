@@ -2825,10 +2825,10 @@
             "sourcePath": "D:\\projects-personal\\cc_app\\force-app\\main\\default\\profiles\\Admin.profile-meta.xml",
             "isDirectory": false,
             "isMetadataFile": true,
-            "size": 28293,
-            "modifiedTime": 1567769779460,
-            "changeTime": 1567769779460,
-            "contentHash": "e702f2a831449203dbafb8d4d297de3fa3680486"
+            "size": 28421,
+            "modifiedTime": 1567770546906,
+            "changeTime": 1567770546906,
+            "contentHash": "c29c0355ffc9cdeaf6bb3b3f40626512ba049f67"
         }
     ],
     [
@@ -2838,10 +2838,10 @@
             "sourcePath": "D:\\projects-personal\\cc_app\\force-app\\main\\default\\profiles\\Custom%3A Marketing Profile.profile-meta.xml",
             "isDirectory": false,
             "isMetadataFile": true,
-            "size": 10622,
-            "modifiedTime": 1567769779474,
-            "changeTime": 1567769779474,
-            "contentHash": "95c99a512646b1c2d64705716e6141500d96f076"
+            "size": 10750,
+            "modifiedTime": 1567770546922,
+            "changeTime": 1567770546922,
+            "contentHash": "ffebf4c82f6de60f7c46bfc0f6c2f61694b6484f"
         }
     ],
     [
@@ -2851,10 +2851,10 @@
             "sourcePath": "D:\\projects-personal\\cc_app\\force-app\\main\\default\\profiles\\Custom%3A Sales Profile.profile-meta.xml",
             "isDirectory": false,
             "isMetadataFile": true,
-            "size": 10622,
-            "modifiedTime": 1567769779468,
-            "changeTime": 1567769779468,
-            "contentHash": "95c99a512646b1c2d64705716e6141500d96f076"
+            "size": 10750,
+            "modifiedTime": 1567770546915,
+            "changeTime": 1567770546915,
+            "contentHash": "ffebf4c82f6de60f7c46bfc0f6c2f61694b6484f"
         }
     ],
     [
@@ -2864,10 +2864,10 @@
             "sourcePath": "D:\\projects-personal\\cc_app\\force-app\\main\\default\\profiles\\Custom%3A Support Profile.profile-meta.xml",
             "isDirectory": false,
             "isMetadataFile": true,
-            "size": 10960,
-            "modifiedTime": 1567769779427,
-            "changeTime": 1567769779427,
-            "contentHash": "9b9c2eca223cd6690fdf78b42f489b783922bd80"
+            "size": 11088,
+            "modifiedTime": 1567770546876,
+            "changeTime": 1567770546876,
+            "contentHash": "36c59bede339ed6d8de1791b5239e8f0e4671bb5"
         }
     ],
     [
@@ -2951,13 +2951,11 @@
             "sourcePath": "D:\\projects-personal\\cc_app\\force-app\\main\\default\\tabs",
             "isDirectory": true,
             "size": 0,
-            "modifiedTime": 1567079993183,
-            "changeTime": 1567079993183,
-            "contentHash": "4434c7d986134df254b8273ea634a9004602a2bb",
+            "modifiedTime": 1567770264891,
+            "changeTime": 1567770264891,
+            "contentHash": "a8f54ff52da4735b896832d41a06ba5bc75d3bee",
             "isMetadataFile": false,
-            "state": "u",
-            "isWorkspace": false,
-            "isArtifactRoot": false
+            "state": "u"
         }
     ],
     [
@@ -3123,6 +3121,19 @@
             "state": "u",
             "isWorkspace": true,
             "isArtifactRoot": false
+        }
+    ],
+    [
+        "D:\\projects-personal\\cc_app\\force-app\\main\\default\\tabs\\Product_To_Category__c.tab-meta.xml",
+        {
+            "sourcePath": "D:\\projects-personal\\cc_app\\force-app\\main\\default\\tabs\\Product_To_Category__c.tab-meta.xml",
+            "isDirectory": false,
+            "size": 184,
+            "modifiedTime": 1567770264892,
+            "changeTime": 1567770264892,
+            "contentHash": "e116d2c03ce67e8c08c4f7ba879f7120f4416af5",
+            "isMetadataFile": true,
+            "state": "u"
         }
     ]
 ]
