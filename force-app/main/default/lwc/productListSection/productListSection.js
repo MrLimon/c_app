@@ -164,8 +164,15 @@ export default class ProductListSection extends LightningElement {
         console.log(event.target.value);
 
         if (event.target.value) {
+            console.log(event.target);
             if (!this.selectedFilters.get(event.target.name)) {
-                this.selectedFilters.set(event.target.name, [event.target.type]);
+                if (event.target.localName == "lightning-combobox") {
+                    this.selectedFilters.set(event.target.name, ['Drop Down']);
+                } else {
+                    this.selectedFilters.set(event.target.name, [event.target.type]);
+                }
+
+
             }
 
             if (event.target.placeholder == "FROM") {
