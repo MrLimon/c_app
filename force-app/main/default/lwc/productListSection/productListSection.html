@@ -87,16 +87,32 @@
                                             <template if:true={config.isNumber}>
                                                 <lightning-layout>
                                                     <lightning-layout-item size="6" multiple-rows="true">
-                                                        <lightning-input name={config.name} label={config.name} isnumber={config.isNumber} type={config.type} onchange={handleFilterChange} placeholder="FROM"></lightning-input>
+                                                        <lightning-input name={config.name}
+                                                                         label={config.name}
+                                                                         isnumber={config.isNumber}
+                                                                         type={config.type}
+                                                                         onchange={handleFilterChange}
+                                                                         placeholder="FROM">
+                                                        </lightning-input>
                                                     </lightning-layout-item>
                                                     <lightning-layout-item size="6">
-                                                        <lightning-input name={config.name} label="Between" isnumber={config.isNumber} type={config.type} onchange={handleFilterChange} placeholder="TO"></lightning-input>
+                                                        <lightning-input name={config.name}
+                                                                         label="Between"
+                                                                         isnumber={config.isNumber}
+                                                                         type={config.type}
+                                                                         onchange={handleFilterChange}
+                                                                         placeholder="TO">
+                                                        </lightning-input>
                                                     </lightning-layout-item>
                                                 </lightning-layout>
                                             </template>
                                             <template if:true={config.isSelect}>
-                                                <lightning-combobox name={config.name} label={config.name} options={config.options}>
-
+                                                <lightning-combobox name={config.name}
+                                                                    label={config.name}
+                                                                    options={config.options}
+                                                                    onchange={handleFilterChange}
+                                                                    placeholder="Please select one"
+                                                                    type={config.type}>
                                                 </lightning-combobox>
                                             </template>
                                             <template if:true={config.isText}>

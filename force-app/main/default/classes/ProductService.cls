@@ -22,12 +22,15 @@ global with sharing class ProductService
 
         for (Product2 currentProduct : products)
         {
-            for (Id currentCategoryId : parentCategories.get(currentProduct.Category__c))
+            if (parentCategories.containsKey(currentProduct.Category__c))
             {
-                productToCategoriesForInsert.add(new Product_To_Category__c(
-                        Category__c = currentCategoryId,
-                        Product__c = currentProduct.Id
-                ));
+                for (Id currentCategoryId : parentCategories.get(currentProduct.Category__c))
+                {
+                    productToCategoriesForInsert.add(new Product_To_Category__c(
+                            Category__c = currentCategoryId,
+                            Product__c = currentProduct.Id
+                    ));
+                }
             }
         }
 

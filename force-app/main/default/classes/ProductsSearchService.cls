@@ -2,6 +2,8 @@ public with sharing class ProductsSearchService
 {
     public static  List<List<Product_Field__c>> searchProducts(Set<Id> categoryIds, List<List<String>> filters)
     {
+        System.debug(filters);
+
         String query = 'SELECT Value__c, Product__c, Product_Configuration__r.Api_Name__c FROM Product_Field__c WHERE (';
         
         for (List<String> currentFilter : filters)
@@ -136,9 +138,9 @@ public with sharing class ProductsSearchService
             
             query += ') AND';
         }
-        else if (type == 'text')
+        else if (type == 'text' || type == 'Drop Down')
         {
-            query += '( Product_Configuration__r.Api_Name__c = ' + '\'' + apiName + '\' AND Value__c = ' + '\'' + value + '\') AND';
+            query += '( Product_Configuration__r.Api_Name__c = ' + '\'' + apiName + '\' AND Value__c = ' + '\'' + value + '\' AND';
         }
     
         return query;
