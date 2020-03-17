@@ -4,5 +4,6 @@ trigger ProductTrigger on Product2 (after insert) {
             TriggerTemplate.TriggerAction.afterinsert, TriggerTemplate.TriggerAction.afterupdate
     });
 
+//test
     triggerManager.runHandlers();
 }
