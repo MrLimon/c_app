@@ -19,6 +19,12 @@ export default class ProductListSection extends LightningElement {
 
     @track value = "Red";
 
+    @track modalEnabled = false;
+    @track productEditMode = false;
+    @track productDeleteMode = false;
+    @track productCreateMode = false;
+    @track selectedProductId;
+
 
     @wire (getListUi, {objectApiName: CATEGORY_OBJECT, listViewApiName: "Top_Level"})
     retrievedTopCategories ({data, error}) {
@@ -164,8 +170,15 @@ export default class ProductListSection extends LightningElement {
         console.log(event.target.value);
 
         if (event.target.value) {
+            console.log(event.target);
             if (!this.selectedFilters.get(event.target.name)) {
-                this.selectedFilters.set(event.target.name, [event.target.type]);
+                if (event.target.localName == "lightning-combobox") {
+                    this.selectedFilters.set(event.target.name, ['Drop Down']);
+                } else {
+                    this.selectedFilters.set(event.target.name, [event.target.type]);
+                }
+
+
             }
 
             if (event.target.placeholder == "FROM") {
@@ -196,6 +209,24 @@ export default class ProductListSection extends LightningElement {
         console.log(this.selectedFilters);
     }
 
+    editProduct(event) {
+
+    }
+
+    deleteProduct(event) {
+        console.log(event.target.id);
+    }
+
+    createProduct(event) {
+
+    }
+
+    closeModal() {
+        this.productCreateMode = false;
+        this.productDeleteMode = false;
+        this.productEditMode = false;
+        this.selectedProductId = null;
+    }
 
     configurateCategoryWrapper(categoryId, categoryName, level, value) {
         return {level: level, name: categoryName, id: categoryId, value: value, iconName: "utility:down"};
