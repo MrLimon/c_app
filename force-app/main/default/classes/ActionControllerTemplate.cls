@@ -2,12 +2,15 @@ public with sharing class ActionControllerTemplate {
 	@AuraEnabled(cacheable=true)
 	public static Object invokeCachableAction(String actions)
 	{
+		// new code line
+		//second line
 		return processActions(actions);
 	}
 	
 	@AuraEnabled
 	public static Object invokeAction(String actions)
 	{
+		//test here
 		return processActions(actions);
 	}
 	
