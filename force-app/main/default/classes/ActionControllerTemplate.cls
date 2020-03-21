@@ -3,6 +3,7 @@ public with sharing class ActionControllerTemplate {
 	public static Object invokeCachableAction(String actions)
 	{
 		// new code line
+		//second line
 		return processActions(actions);
 	}
 	
