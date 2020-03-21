@@ -10,6 +10,7 @@ public with sharing class ActionControllerTemplate {
 	@AuraEnabled
 	public static Object invokeAction(String actions)
 	{
+		//test here
 		return processActions(actions);
 	}
 	
